@@ -1,8 +1,10 @@
+/*Hex color palette*/
 :root {
     --primary: #cda542;
     --secondary: #5542cd;
 }
 
+/* Styling for main header at top of page */
 header h1 {
     color: var(--primary);
     background-color: #000;
@@ -21,6 +23,7 @@ header h1 {
 
 }
 
+/*Nav bar styling*/
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -44,6 +47,7 @@ nav {
     border: 2px solid var(--primary)
 }
 
+/*Styling for each section's header*/
 .section-heading {
     background-color: #000;
     color: var(--primary);
@@ -59,7 +63,32 @@ nav {
     font-size: 40px;
 }
 
+/*main image positioning*/
 #top-photo {
     margin: 0
 
+}
+
+article {
+    background-color: var(--primary)
+}
+
+article p {
+    font-family: "Corbel";
+    font-size: 20px;
+    color: #000;
+    margin: 0;
+   
+
+}
+
+article #main-image {
+    background-color: var(--primary);
+    margin: 0
+    
+}
+
+#main-image img {
+    opacity: 0.6;
+    background-color: var(--primary);
 }
