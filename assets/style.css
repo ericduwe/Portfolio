@@ -5,15 +5,21 @@
 }
 
 /* Styling for main header at top of page */
+header {
+    margin-bottom: 0;
+    background-color: #000;
+}
+
 header h1 {
     color: var(--primary);
     background-color: #000;
-    font-family: "Corbel";
-    font-size: 80px;
-    text-transform: capitalize;
+    font-family: "Reenie Beanie", cursive;
+    font-style: bold;
+    font-size: 100px;
+    text-transform: uppercase;
     text-align: left;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     top: 119px;
     left: 1208px;
@@ -23,28 +29,41 @@ header h1 {
 
 }
 
+header h6 {
+    color: var(--primary);
+    background-color: #000;
+    font-family: "Reenie Beanie", cursive;
+    font-size: 30px;
+    position: relative;
+    bottom: 100px;
+    margin: 0;
+}
+
 /*Nav bar styling*/
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+
 }
 
 nav a {
-    margin: 0px 100px;
+    margin-right: 250px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: "Corbel";
     font-size: 40px;
     color: #fff;
     text-decoration: none;
+    
 }
 
 nav {
     background-color: #000;
     border: 2px solid var(--primary)
+
 }
 
 /*Styling for each section's header*/
@@ -66,6 +85,13 @@ nav {
 /*main image positioning*/
 #top-photo {
     margin: 0
+
+}
+
+#top-photo img {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
 
 }
 
