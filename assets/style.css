@@ -122,3 +122,19 @@ article #main-image {
     opacity: 0.6;
     background-color: var(--primary);
 }
+
+#portfolio {
+    height: 500px;
+
+}
+
+#portfolio img {
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+#portfolio #thumbnail-1 {
+    height: 400px;
+}
