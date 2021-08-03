@@ -4,6 +4,11 @@
     --secondary: #5542cd;
 }
 
+/*Scroll settings for page*/
+html {
+    scroll-behavior: smooth;
+}
+
 /* Styling for main header at top of page */
 header {
     margin-bottom: 0;
