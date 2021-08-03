@@ -60,6 +60,16 @@ nav a {
     
 }
 
+nav a:hover {
+    margin-right: 250px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Corbel";
+    font-size: 40px;
+    color: var(--primary);
+    text-decoration: none;
+}
+
 nav {
     background-color: #000;
     border: 2px solid var(--primary)
@@ -125,16 +135,27 @@ article #main-image {
 
 #portfolio {
     height: 500px;
+    background-color: #000
 
 }
 
 #portfolio img {
-    height: 200px;
+    height: 300px;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
 }
 
-#portfolio #thumbnail-1 {
-    height: 400px;
+#portfolio li, #portfolio a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--primary)
+}
+
+#portfolio ul {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    
 }
