@@ -53,7 +53,7 @@ nav a {
     margin-right: 250px;
     display: flex;
     justify-content: space-between;
-    font-family: "Corbel";
+    font-family: "Staatliches";
     font-size: 40px;
     color: #fff;
     text-decoration: none;
@@ -64,7 +64,7 @@ nav a:hover {
     margin-right: 250px;
     display: flex;
     justify-content: space-between;
-    font-family: "Corbel";
+    font-family: "Staatliches";
     font-size: 40px;
     color: var(--primary);
     text-decoration: none;
@@ -88,8 +88,8 @@ nav {
     width: 100%;
     height: 100px;
     margin: 0;
-    font-family: "Corbel", sans-serif;
-    font-size: 40px;
+    font-family: 'Staatliches';
+    font-size: 70px;
 }
 
 /*main image positioning*/
@@ -105,6 +105,16 @@ nav {
 
 }
 
+#about-me h2 {
+    background-color: var(--primary);
+    color: #000;
+}
+
+#about-me-text img {
+    opacity: 0.25;
+    border: 3px solid #000;
+}
+
 article {
     background-color: var(--primary)
 }
@@ -117,9 +127,6 @@ article p {
     display: flex;
     justify-content: flex-end;
     width: 75%;
-
-   
-
 }
 
 article #main-image {
@@ -144,18 +151,43 @@ article #main-image {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
+    border: 3px solid var(--primary);
+
 }
 
 #portfolio li, #portfolio a {
     list-style-type: none;
     text-decoration: none;
-    color: var(--primary)
+    color: var(--primary);
+    font-family: "Reenie Beanie", cursive;
+    font-size: 40px;
 }
 
 #portfolio ul {
     display: flex;
     justify-content: flex-start;
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
 }
+
+#contact h2 {
+    background-color: var(--primary);
+    color: #000;
+}
+
+#contact {
+    background-color: var(--primary);
+    display: block;
+}
+
+#contact h3 {
+    font-family: "Reenie Beanie", cursive;
+    font-size: 50px;
+}
+
+#contact h4 {
+    font-family: "Staatliches";
+    font-size: 40px;
+    padding-bottom: 100px;
+}
+
