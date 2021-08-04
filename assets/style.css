@@ -252,3 +252,28 @@ article p {
         
 }
 
+@media screen and (max-width: 480px) {
+    nav ul {
+        list-style-type: none;
+        height: 800px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #about-me article img {
+        border: 3px solid #000;
+        display: block;
+        max-width: 480px;
+        max-height: 550px;
+        min-width: 200px;
+        width: 20%;
+        height: auto;
+        margin-right: 50%;
+    }
+        
+}
+
