@@ -1,4 +1,4 @@
-/*Hex color palette*/
+/*variables*/
 :root {
     --primary: #cda542;
 }
@@ -8,11 +8,12 @@ html {
     scroll-behavior: smooth;
 }
 
+/*primary background color*/
 body {
     background-color: var(--primary);
 }
 
-/* Styling for main header at top of page */
+/* Styling for main header and subheader at top of page */
 header {
     margin-bottom: 0;
     background-color: #000;
@@ -112,6 +113,7 @@ nav {
 
 }
 
+/*About Me Section*/
 #about-me {
     height: 850px;
     width: 100%;
@@ -123,19 +125,21 @@ nav {
     background-color: var(--primary);
     color: #000;
 }
+
 #about-me article {
-    height: 800px;
-    
+    height: 800px; 
+      
 }
 
-#about-me article img {
-    
+#about-me article img { 
     border: 3px solid #000;
     display: block;
+    float: right;
     max-width: 480px;
     max-height: 550px;
-    width: 30%;
-    height: 30%;
+    min-width: 200px;
+    width: 20%;
+    height: auto;
     margin: 0;
 }
 
@@ -148,22 +152,23 @@ article p {
     justify-content: flex-end;
     width: 50%;
     min-width: 500px;
+    overflow: hidden;
 }
 
+
+/*My Work Section*/
 #portfolio {
     height: 800px;
     width: 100%;
     background-color: #000       
 }
    
-
 #portfolio #project-2 img, #portfolio #project-3 img {
     max-height: 50%;
     max-width: 50%;
     height: auto;
     width: auto;
-    border: 3px solid var(--primary);
-    
+    border: 3px solid var(--primary);   
 }
 
 #column-1 {
@@ -173,8 +178,7 @@ article p {
 
 #column-2 {
     width: 50%;
-    float: right;
-         
+    float: right;         
 }
 
 #portfolio #column-1 img {
@@ -183,7 +187,6 @@ article p {
     max-height: 100%;
     max-width: 100%;
     border: 3px solid var(--primary);
-
 }
 
 #portfolio li, #portfolio a {
@@ -191,17 +194,16 @@ article p {
     text-decoration: none;
     color: var(--primary);
     font-family: "Reenie Beanie", cursive;
-    font-size: 40px;
-    
+    font-size: 40px;    
 }
 
 #portfolio ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;   
 }
 
+/*Contact Section*/
 #contact h2 {
     background-color: var(--primary);
     color: #000;
@@ -223,6 +225,8 @@ article p {
     padding-bottom: 100px;
 }
 
+
+/*Changes for smaller screen devices*/
 @media screen and (max-width: 768px) {
     nav ul {
         list-style-type: none;
@@ -235,5 +239,5 @@ article p {
         align-items: center;
     }
         
-    }
+}
 
