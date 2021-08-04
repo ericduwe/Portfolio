@@ -2,7 +2,7 @@
 
 ### Project Description:
 
-The deployed webpage is a starter template for a personal web development project portfolio. The page contains 3 sections:
+The deployed webpage is a starter template for a personal web development project portfolio. The page contains three sections:
 
 1. About Me -- containing a profile photo and placeholder text for a personal bio
 
@@ -16,13 +16,13 @@ The deployed webpage is a starter template for a personal web development projec
 
 ### Nav Bar:
 
-The Nav bar contains links to each section of the page. Using smooth-scrolling, each link scrolls directly to its corresponding section. On smaller or mobile screens (max-width 768px), the nav bar is reordered from a horizontal list to a vertical one to avoid horizontal scrolling.
+The Nav bar contains links to each section of the page. Using smooth-scrolling, each link scrolls directly to its corresponding section. On smaller or mobile screens (max-width 768px), the nav bar is reordered from a horizontal list to a vertical one to avoid excessive horizontal scrolling.
 
 
 
 ### About Me:
 
-The About Me section contains placeholder text (using "Lorem ipsum..") and a profile photo. As the screen size shrinks the image resizes but maintains a minimum width and height after a certain point so that it isn't too small on mobile screens. The paragraph also has a minimum width for readability.
+The About Me section contains placeholder text (using "Lorem ipsum..") and a profile photo. As the screen size shrinks, the image resizes but maintains a minimum width and height after a certain point so that it isn't too small on mobile or tablet screens. The paragraph also has a minimum width for readability.
 
 
 
