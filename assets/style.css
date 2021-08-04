@@ -15,7 +15,7 @@ body {
 
 /* Styling for main header and subheader at top of page */
 header {
-    margin-bottom: 0;
+    margin: 0;
     background-color: #000;
 }
 
@@ -26,14 +26,10 @@ header h1 {
     font-style: bold;
     font-size: 100px;
     text-transform: uppercase;
-    text-align: left;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    top: 119px;
-    left: 1208px;
     width: 100%;
-    height: 328px;
     margin: 0;
 
 }
@@ -273,6 +269,32 @@ article p {
         width: 20%;
         height: auto;
         margin-right: 50%;
+    }
+
+
+   
+    header h1 {
+        color: var(--primary);
+        background-color: #000;
+        font-family: "Reenie Beanie", cursive;
+        font-style: bold;
+        font-size: 80px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 328px;
+        
+    
+    }
+    
+    header h6 {
+        color: var(--primary);
+        background-color: #000;
+        font-family: "Reenie Beanie", cursive;
+        font-size: 20px;
+        margin: 0;
     }
         
 }
