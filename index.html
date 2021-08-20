@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Staatliches&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 
@@ -18,7 +19,7 @@
         <h6>My Online Portfolio</h6>
     </header>
     <nav>
-        <ul>
+        <ul class="nav">
             <li><a href=#about-me>About Me</a></li>
             <li><a href=#portfolio>My Work</a></li>
             <li><a href=#contact>Contact</a></li>
@@ -33,34 +34,39 @@
             <h2 class="section-heading" id="about-me-heading">About Me</h2>
             <article>
                 <figure><img src="./assets/images/profile-photo.jpg" alt="profile photo"></figure>
-                <p id="about-me-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minima veniam, nisi est veritatis
-                tenetur impedit eius asperiores consectetur! Assumenda autem qui voluptas quibusdam totam ad facere,
-                erum excepturi corporis.
-                Animi aliquam dolorem, quia voluptas ea quasi incidunt autem debitis ratione aperiam hic quos,
-                tempora delectus obcaecati. Possimus officia quos quas tempora! Laudantium, obcaecati? Quos, fugit
-                soluta! Quod, ea quos!
-                Officiis nam assumenda ipsa, quo quisquam beatae aspernatur possimus laboriosam alias quod quaerat
-                ducimus labore asperiores vero obcaecati.
+                <p id="about-me-text">I’m a freelance web developer and computer programming student based in Dallas, TX with knowledge of HTML, CSS, JavaScript and server-side API functionality. I specialize in web design and development for small businesses and non-profits that need a simple, strong boost to their online presence to increase revenue and visibility.
+                <br>
+                I have a Bachelor’s Degree from the University of Wisconsin-Madison and I’m currently working towards a Certificate in Full-Stack Web Development from Southern Methodist University.
+                    
             </article>
         </section>
         <section id="portfolio">
             <h2 class="section-heading">My Work</h2>
             <div id="column-1">
-                <a href="http://google.com"><img id="thumbnail-1" src= "./assets/images/Webpage1.png">Placeholder 1</a>
+                <a href="https://jpolmon.github.io/Project01/"><img id="thumbnail-1" src= "./assets/images/Project-Screenshot.PNG">Personalized Home Page</a>
             </div id="column-2">
                 <ul>
-                    <li id="project-2"><a href="http://google.com"><img src="./assets/images/Webpage2.jpg">Placeholder 2</a></li>
-                    <li id="project-3"><a href="http://google.com"><img src="./assets/images/Webpage3.jpg">Placeholder 3</a></li>
+                    <li id="project-2"><a href="https://ericduwe.github.io/weatherApp/"><img src="./assets/images/WeatherApp-Screenshot.PNG">Weather Forecast App</a></li>
+                    <li id="project-3"><a href="https://ericduwe.github.io/passwordGenerator/"><img src="./assets/images/PW-Screenshot.PNG">Password Generator App</a></li>
                 </ul>
         </section>
         <section id="contact">
             <h2 class="section-heading">Contact</h2>
-            <h3>Email:</h3>
-            <h4>email@gmail.com</h4>
-            <h3>LinkedIn:</h3>
-            <h4>/in/eric-duwe</h4>
-            <h3>Phone: number:</h3>
-            <h4>(123) 456-7890</h4>
+            <br>
+            <div class="row align-items-start">
+                <div class="col">
+                    <h4>ericduwe@gmail.com</h4>
+                </div> 
+                <div class="col">
+                    <h4>(708) 217-7579</h4>
+                </div>
+                <div class="col">
+                    <h4><a href="https://www.linkedin.com/in/eric-duwe/">LinkedIn</a></h4>
+                </div>
+                <div class="col">
+                    <h4><a href="https://github.com/ericduwe">Github</a></h4>
+                </div>
+            </div>
         </section>
     </main>
 
