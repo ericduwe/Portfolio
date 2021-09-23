@@ -9,67 +9,89 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Staatliches&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f6a3ad253f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Eric Duwe</h1>
-        <h6>My Online Portfolio</h6>
-    </header>
-    <nav>
-        <ul class="nav">
-            <li><a href=#about-me>About Me</a></li>
-            <li><a href=#portfolio>My Work</a></li>
-            <li><a href=#contact>Contact</a></li>
-            <li><a href="https://docs.google.com/document/d/1fA2QK3tCP5Js0bEtjsRqw7YkvB521kq_KTqpSSA40YE/edit?usp=sharing">CV</a></li>
+    <nav class="navbar has-background-grey-light is-spaced" role="navigation" aria-label="main navigation">
+        <div class ="navbar-brand block">
+            <h1 class="block navbar-item">Eric Duwe</h1>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger" data-target="navbarBasicExample" onclick='toggleBurger()'>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div> 
+        <h6>Web Development Portfolio</h6>
+        <ul class="navbar-menu has-background-grey-light" id="navbar-menu">
+            <div class="navbar-start">
+                <li class="navbar-item"><a href=#about-me>About Me</a></li>
+                <li class="navbar-item"><a href=#portfolio>My Work</a></li>
+                <li class="navbar-item"><a href=#contact>Contact</a></li>
+                <li class="navbar-item"><a href="https://docs.google.com/document/d/1fA2QK3tCP5Js0bEtjsRqw7YkvB521kq_KTqpSSA40YE/edit?usp=sharing" target="_blank">CV</a></li>
+            </div>
         </ul>
     </nav>
-    <figure id="top-photo">
-        <img src="assets/images/rice-plantation.png" alt="rice-plantation">
-    </figure>
     <main>
-        <section id="about-me">
-            <h2 class="section-heading" id="about-me-heading">About Me</h2>
-            <article>
-                <figure><img src="./assets/images/profile-photo.jpg" alt="profile photo"></figure>
-                <p id="about-me-text">I’m a freelance web developer and computer programming student based in Dallas, TX with knowledge of HTML, CSS, JavaScript and server-side API functionality. I specialize in web design and development for small businesses and non-profits that need a simple, strong boost to their online presence to increase revenue and visibility.
-                <br>
-                I have a Bachelor’s Degree from the University of Wisconsin-Madison and I’m currently working towards a Certificate in Full-Stack Web Development from Southern Methodist University.
+        <section id="about-me" class="hero is-fullheight">
+            <div class="hero-body">
+                <h2 class="title section-heading" id="about-me-heading">About Me</h2>
+                <article class="subtitle">
                     
-            </article>
+                    <p id="about-me-text">I’m a freelance web developer and computer programming student based in Dallas, TX with knowledge of both front-end and back-end technologies.
+                    I have a Bachelor’s Degree from the University of Wisconsin-Madison and I’m currently working towards a Certificate in Full-Stack Web Development from Southern Methodist University.</p>
+                    </br></br></br>
+                    <h3>Technologies</h3>        
+                    <p>HTML5, CSS, Bootstrap, Bulma, JavaScript, jQuery, node.js, mySQL, Express, REST APIs, Github, Heroku</p>
+                </article>       
+            </div>              
         </section>
-        <section id="portfolio">
-            <h2 class="section-heading">My Work</h2>
-            <div id="column-1">
-                <a href="https://jpolmon.github.io/Project01/"><img id="thumbnail-1" src= "./assets/images/Project-Screenshot.PNG">Personalized Home Page</a>
-            </div id="column-2">
-                <ul>
-                    <li id="project-2"><a href="https://ericduwe.github.io/weatherApp/"><img src="./assets/images/WeatherApp-Screenshot.PNG">Weather Forecast App</a></li>
-                    <li id="project-3"><a href="https://ericduwe.github.io/passwordGenerator/"><img src="./assets/images/PW-Screenshot.PNG">Password Generator App</a></li>
-                </ul>
-        </section>
-        <section id="contact">
-            <h2 class="section-heading">Contact</h2>
-            <br>
-            <div class="row vertical-align">
-                <div class="col">
-                    <h4>ericduwe@gmail.com</h4>
-                </div> 
-                <div class="col">
-                    <h4>(708) 217-7579</h4>
-                </div>
-                <div class="col">
-                    <h4><a href="https://www.linkedin.com/in/eric-duwe/">LinkedIn</a></h4>
-                </div>
-                <div class="col">
-                    <h4><a href="https://github.com/ericduwe">Github</a></h4>
+        <section id="portfolio" class="hero is-fullheight">
+            <div class="hero-body">
+                <h2 class="section-heading title">My Work</h2>
+                <div class="tile is-parent is-8" id="project-grid">
+                    <div class="tile is-child project-card">
+                        <a class="project-link" href="https://jpolmon.github.io/Project01/" target="_blank"><figure class="image is-3by2"><img src="./assets/images/Project-Screenshot.PNG"></figure>Personalized Home Page</a></br><a class="repo-link" href="https://github.com/jpolmon/Project01" target="_blank">Github Repo</a>
+                    </div>
+                    <div class="tile is-child project-card">
+                        <a class="project-link" href="https://ericduwe.github.io/weatherApp/"><figure class="image is-3by2"><img src="./assets/images/WeatherApp_Screenshot2.PNG"></figure>Weather Forecast App</a></br><a class="repo-link" href="https://github.com/ericduwe/weatherApp" target="_blank">Github Repo</a>
+                    </div>
+                    <div class="tile is-child project-card">
+                        <a class="project-link" href="https://ericduwe.github.io/passwordGenerator/"><figure class="image is-3by2"><img src="./assets/images/myworkoutlog_screenshot.png"></figure>myWorkoutLog</a></br><a class="repo-link" href="https://github.com/jsoh11/ExerciseLog" target="_blank">Github Repo</a>
+                    </div>
                 </div>
             </div>
         </section>
+        <section id="contact" class="hero is-fullheight">
+            <h2 class="section-heading">Contact</h2>
+                <div class="container contact-grid">
+                    <div class="block tile contact-item">
+                        <h4><a href="mailto:ericduwe@gmail.com"><span class="icon"><i class="fas fa-paper-plane"></i></span> ericduwe@gmail.com</a></h4>
+                    </div> 
+                    <div class="block tile contact-item">
+                        <h4><a href="https://www.linkedin.com/in/eric-duwe/" target="_blank"><span class="icon"><i class="fab fa-linkedin"></i></span> LinkedIn</a></h4>
+                    </div>
+                    <div class="block tile contact-item">
+                        <h4><a href="https://github.com/ericduwe" target="_blank"><span class="icon"><i class="fab fa-github"></i></span> Github</a></h4>
+                    </div>
+                    <div class="block tile contact-item">
+                        <h4><i class="fas fa-phone-square"></i> (708) 217-7579</h4>
+                    </div>
+                    <div class="block tile is-4 contact-item">
+                        <figure class="level-item image is-16by16">
+                            <img src="./assets/images/profile-photo.jpg" alt="profile photo" class="is-rounded" id="profile-photo">
+                        </figure>
+                    </div>
+                </div>
+            
+            
+        </section>
     </main>
 
+    <script src='navbar.js'></script>
 </body>
 
 </html>

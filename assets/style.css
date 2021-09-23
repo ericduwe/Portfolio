@@ -14,56 +14,23 @@ body {
 }
 
 /* Styling for main header and subheader at top of page */
-header {
-    margin: 0;
-    background-color: #000;
-}
 
-header h1 {
-    color: var(--primary);
-    background-color: #000;
-    font-family: "Reenie Beanie", cursive;
-    font-style: bold;
-    font-size: 100px;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-    height: 350px;
 
-}
-
-header h6 {
-    color: var(--primary);
-    background-color: #000;
-    font-family: "Reenie Beanie", cursive;
-    font-size: 30px;
-    position: relative;
-    bottom: 100px;
-    margin: 0;
-}
 
 /*Nav bar styling*/
-nav ul {
-    list-style-type: none;
-    height: 100px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
 
-}
+/* .navbar-start {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+} */
 
 nav a {
     margin-right: 250px;
-    
     font-family: "Staatliches";
     font-size: 40px;
-    color: #fff;
     text-decoration: none;
+    color: #000
     
 }
 
@@ -73,47 +40,47 @@ nav a:hover {
     justify-content: space-between;
     font-family: "Staatliches";
     font-size: 40px;
-    color: var(--primary);
+    color: gray;
     text-decoration: none;
+    font-weight: bold;
 }
 
-nav {
-    background-color: #000;
-    border: 2px solid var(--primary)
+.navbar-brand h1 {
+
+    font-family: "Staatliches";
+    font-size: 100px;
+    color: #000;
+
+    
+}
+.navbar h6 {
+    font-family: "Staatliches";
+    font-size: 25px;
+    color: #000;
+    margin-left: 15px;
 
 }
 
+#burger {
+    width: 100px;
+    height: 200px;
+}
 
 
 /*Styling for each section's header*/
 .section-heading {
-    background-color: #000;
+    background-color: grey;
     color: var(--primary);
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    margin: 0;
+    width: 60%;
     font-family: 'Staatliches';
-    font-size: 100px;
+    font-size: 80px;
 }
 
-/*main image positioning*/
-#top-photo {
-    margin: 0;
-    width: 100%;
-}
 
-#top-photo img {
-    width: 100%;
-    margin: 0;
-
-}
 
 /*About Me Section*/
 #about-me {
-    height: 850px;
-    width: 100%;
+
     background-color: var(--primary);
     
 }
@@ -123,108 +90,111 @@ nav {
     color: #000;
 }
 
-#about-me article {
-    height: 800px; 
-      
-}
 
 #about-me article img { 
     border: 3px solid #000;
-    display: block;
     float: right;
-    max-width: 480px;
-    max-height: 550px;
     min-width: 200px;
     width: 20%;
-    height: auto;
-    margin: 0;
 }
 
 article p {
     font-family: "Roboto", sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     color: #000;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
-    min-width: 400px;
-    overflow: hidden;
 }
 
 
 /*My Work Section*/
 #portfolio {
     height: 1200px;
-    width: 100%;
-    background-color: #000       
-}
-   
-#portfolio #project-2 img, #portfolio #project-3 img {
-    max-height: 50%;
-    max-width: 50%;
-    height: auto;
-    width: auto;
-    border: 3px solid var(--primary);   
+    background-color: grey      
 }
 
-#column-1 {
-    width: 50%;
-    float: left;
-}
 
-#column-2 {
-    width: 50%;
-    float: right;         
-}
 
-#portfolio #column-1 img {
-    height: auto;
-    width: auto;
-    max-height: 100%;
-    max-width: 100%;
-    border: 3px solid var(--primary);
-}
-
-#portfolio li, #portfolio a {
+#portfolio a {
     list-style-type: none;
     text-decoration: none;
     color: var(--primary);
-    font-family: "Reenie Beanie", cursive;
-    font-size: 40px;    
+    
+    font-family: "Staatliches";   
 }
 
-#portfolio ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
+#portfolio a:hover {
+    list-style-type: none;
+    text-decoration: none;
+    color: #beb294;
+    
+    font-family: "Staatliches";    
 }
+
+.project-card {
+    padding: 10px;
+}
+
+.project-link {
+    font-size: 30px;
+}
+
+.repo-link {
+    font-size: 20px;
+}
+
+
 
 /*Contact Section*/
 #contact h2 {
+    width: 100%;
+    text-align: center;
     background-color: var(--primary);
     color: #000;
 }
 
 #contact {
     background-color: var(--primary);
-    display: block;
 }
 
-#contact h3 {
-    font-size: 30px;
+.contact-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 #contact h4 {
     font-family: "Staatliches";
-    font-size: 40px;
-    padding-bottom: 100px;
+    font-size: 30px;
+    /* padding-bottom: 100px; */
+}
+
+#contact a {
+    font-family: "Staatliches";
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+#contact a:hover {
+
+    font-family: "Staatliches";
+    font-size: 30px;
+    font-weight: bold;
+    color: grey;
+    text-decoration: none;
+}
+
+.level-item {
+    padding: 10px;
 }
 
 
-/*Changes for smaller screen devices*/
-@media screen and (max-width: 768px) {
-    nav ul {
+
+/* Changes for smaller screen devices */
+/* @media screen and (max-width: 768px) { */
+    /* nav ul {
         list-style-type: none;
         height: 800px;
         margin: 0;
@@ -233,22 +203,9 @@ article p {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-    }
+    } */
 
-    #about-me article img {
-        border: 3px solid #000;
-        display: block;
-        max-width: 480px;
-        max-height: 550px;
-        min-width: 200px;
-        width: 20%;
-        height: auto;
-        margin-right: 50%;
-    }
-        
-}
-
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     nav ul {
         list-style-type: none;
         height: 800px;
@@ -297,5 +254,5 @@ article p {
         margin: 0;
     }
         
-}
+} */
 
