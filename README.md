@@ -1,4 +1,4 @@
-# **Portfolio Assignment - Homework 2**
+# **Professional Portfolio**
 
 ### Project Description:
 
